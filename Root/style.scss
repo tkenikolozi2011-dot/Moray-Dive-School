@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  // outline: 1px solid red !important;
+  outline: 1px solid red !important;
 }
 
 .hero {
@@ -282,6 +282,7 @@ a {
 
 iframe {
   width: 100%;
+  height: 450px;
 }
 
 .contact {
@@ -432,6 +433,9 @@ iframe {
     }
     .photos {
       @include flex-column;
+    }
+    iframe {
+      height: 200px
     }
     .divcontact {
       @include flex-column;
