@@ -1,0 +1,499 @@
+@use "base" as *;
+@use "mixins" as *;
+@use "variables" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // outline: 1px solid red !important;
+}
+
+.hero {
+  max-width: 100%;
+  height: 125vh;
+  background-image: url(./bgimg1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: grid;
+  grid-template-columns: 15% 1fr;
+  grid-template-rows: 45% 15% 40%;
+
+  grid-template-areas:
+    ". heading1"
+    ". p1"
+    ". booknow";
+}
+
+h1 {
+  grid-area: heading1;
+  color: yellow;
+  font-size: 5rem;
+  @include flex-column;
+  flex-wrap: wrap;
+  justify-content: end;
+  font-family: "Anton", sans-serif;
+}
+
+p {
+  font-family: "Hepta Slab", serif;
+}
+
+a {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.paragraph {
+  grid-area: p1;
+  color: $white;
+  display: flex;
+  align-items: center;
+  font-size: $font-size;
+  font-weight: 300;
+}
+
+.divbooknow {
+  grid-area: booknow;
+  display: flex;
+  align-items: start;
+  margin-top: 10px;
+}
+
+.booknow {
+  text-decoration: none;
+  border: 2px solid $white;
+  border-radius: 50px;
+  background-color: $white;
+  color: black;
+  padding: 12px 24px;
+  transition: background-color 1s;
+}
+
+.booknow:hover {
+  background-color: $third-color;
+}
+
+.hero2 {
+  max-width: 100%;
+  height: 70vh;
+  background-image: url(./bgimg2.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 30% 40% 30%;
+
+  grid-template-areas:
+    "heading"
+    "paragraph2"
+    "readmore";
+}
+
+.headingabout {
+  margin-top: 60px;
+  grid-area: heading;
+  color: $yellow;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  @include flex-center;
+}
+
+.aboutparagraph {
+  margin-top: 30px;
+  grid-area: paragraph2;
+  width: 500px;
+  color: $white;
+  font-size: $font-weight;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+}
+
+.divreadmore {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.readmore {
+  grid-area: readmore;
+  text-decoration: none;
+  background-color: $white;
+  border: 1px solid $white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  color: black;
+  margin-top: 20px;
+}
+
+.readmore:hover {
+  background-color: $primary-color;
+}
+
+.cards {
+  width: 100%;
+  height: 822px;
+  background-color: #152040;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.courcesheading {
+  color: $white;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  margin-top: 20px;
+}
+
+.card-wrapper {
+  width: 100%;
+  @include flex-row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  color: $white;
+  margin-top: 50px;
+}
+
+.content {
+  max-width: 200px;
+  @include gap;
+  flex-direction: column;
+  margin-bottom: 40px;
+  margin-left: 20px;
+}
+
+.booknow2 {
+  text-align: center;
+  width: 100px;
+  text-decoration: none;
+  color: black;
+  border: 1px solid $white;
+  border-radius: 20px;
+  background-color: $white;
+  padding: 4px 8px;
+}
+
+.booknow2:hover {
+  background-color: $primary-color;
+}
+
+.card1,
+.card2,
+.card3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.card1 {
+  width: 424px;
+  height: 668px;
+  background-image: url(https://static.wixstatic.com/media/fc7570_3d943b929f324e8bb9b4925934bf744f~mv2_d_5760_3840_s_4_2.jpg/v1/fill/w_559,h_668,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc7570_3d943b929f324e8bb9b4925934bf744f~mv2_d_5760_3840_s_4_2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card2 {
+  width: 424px;
+  height: 668px;
+  background-image: url(https://static.wixstatic.com/media/fc7570_043acdee000b4850a234eaf94373483a~mv2_d_3920_3346_s_4_2.jpg/v1/fill/w_561,h_668,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc7570_043acdee000b4850a234eaf94373483a~mv2_d_3920_3346_s_4_2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card3 {
+  width: 424px;
+  height: 668px;
+  background-image: url(https://static.wixstatic.com/media/fc7570_45d9b8902e024708b38cba80b28cabab~mv2_d_2848_3769_s_4_2.jpg/v1/fill/w_561,h_668,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc7570_45d9b8902e024708b38cba80b28cabab~mv2_d_2848_3769_s_4_2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel-item {
+  height: 560px;
+}
+
+.carousel-caption {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  @include flex-column;
+  justify-content: center;
+  align-items: center;
+  p {
+    max-width: 925px;
+    font-size: 28px;
+  }
+}
+
+.names {
+  display: block;
+}
+
+.bgturtle {
+  background-image: url(https://static.wixstatic.com/media/fc7570_929a2fe5b7754396b385f6219e720299~mv2_d_3982_2655_s_4_2.jpg/v1/fill/w_1901,h_960,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc7570_929a2fe5b7754396b385f6219e720299~mv2_d_3982_2655_s_4_2.jpg);
+  max-width: 100%;
+  height: 50rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  @include flex-center;
+  color: $yellow;
+  flex-direction: column;
+}
+
+.donatehead {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.donate {
+  border: 1px solid $white;
+  background-color: $white;
+  color: black;
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin-top: 50px;
+}
+
+.hero4 {
+  height: 30rem;
+  background-color: #152040;
+  @include flex-center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.photos {
+  @include flex-center;
+  gap: 20px;
+}
+
+.headtwo {
+  color: $yellow;
+  margin-bottom: 50px;
+}
+
+iframe {
+  width: 100%;
+}
+
+.contact {
+  background-color: $white;
+}
+
+.divcontact {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+  height: 500px;
+}
+
+.leftside {
+  @include flex-column;
+  justify-content: start;
+  margin: 60px;
+}
+
+.rightside {
+  display: flex;
+  justify-content: end;
+  margin: 60px;
+}
+
+.nametype {
+  @include flex-row;
+  gap: 10px;
+}
+
+.firstname,
+.lastname,
+.email,
+.phone {
+  width: 50%;
+  @include flex-column;
+}
+
+.lastname {
+  display: flex;
+  justify-content: end;
+}
+
+#firstname,
+#lastname,
+#email,
+#phone {
+  margin-top: 15px;
+  border: none;
+  border-bottom: 0.5px solid black;
+  background-color: #ffffff;
+  transition: all 1s;
+}
+
+.emailphone {
+  @include flex-row;
+  gap: 10px;
+}
+
+.message {
+  @include flex-column;
+}
+
+.sumbitbtn {
+  width: 100%;
+  background-color: #152040;
+  color: $white;
+  margin-top: 1rem;
+  height: 2.5rem;
+  border: none;
+}
+
+.sumbitbtn::hover {
+  background-color: $white;
+}
+
+@media (max-width: 1271px) {
+  .logo {
+    width: 4.5rem;
+    height: 2.5rem;
+  }
+  .cards {
+    height: 1600px;
+    .card1,
+    .card2,
+    .card3 {
+      margin-top: 20px;
+    }
+  }
+  .aboutparagraph {
+    width: 500px;
+    text-align: center;
+  }
+  .carousel-item {
+    max-height: 700px;
+  }
+  .carousel-caption p {
+    font-size: 20px;
+    max-width: 600px;
+  }
+
+  @media (max-width: 862px) {
+    .burgerBtn {
+      display: flex;
+      margin-right: 1rem;
+    }
+    .navBar {
+      display: none;
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 45% 15% 40%;
+
+      grid-template-areas:
+        "heading1"
+        "p1"
+        "booknow";
+      h1,
+      p,
+      a {
+        margin-left: 1rem;
+      }
+    }
+    .aboutparagraph {
+      width: 350px;
+      margin: 0 auto;
+    }
+    .cards {
+      height: 1550px;
+    }
+    .card-wrapper {
+      @include flex-column;
+      align-items: center;
+    }
+    .card1,
+    .card2,
+    .card3 {
+      height: 450px;
+      width: 300px;
+    }
+    .carousel-item {
+      max-height: 400px;
+    }
+    .carousel-caption p {
+      font-size: 16px;
+      max-width: 350px;
+    }
+    .photos {
+      @include flex-column;
+    }
+    .divcontact {
+      @include flex-column;
+      .leftside {
+        margin: 0 auto;
+        text-align: center;
+      }
+      .rightside {
+        margin: 0 auto;
+      }
+    }
+    .countryphone {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (max-width: 376px) {
+    .heading {
+      font-size: 1.5rem;
+    }
+    .aboutparagraph {
+      width: 310px;
+      margin: 0 auto;
+    }
+    .readmore {
+      margin-top: 25px;
+    }
+    .card1,
+    .card2,
+    .card3 {
+      max-width: 40vh;
+    }
+    .carousel-item {
+      height: 40vh;
+    }
+    .carousel-caption p {
+      font-size: 0.85rem;
+      max-width: 200px;
+    }
+    .donatehead {
+      text-align: center;
+    }
+    .rightside {
+      width: 100%;
+      margin: 0 auto;
+    }
+    form {
+      width: 90%;
+      margin: 0 auto;
+    }
+    .phonenumber,
+    .download {
+      margin: 0 auto;
+    }
+    #phonenumb {
+      max-width: 12rem;
+    }
+    .footernav ul {
+      @include flex-column;
+      @include align-center;
+    }
+  }
+}

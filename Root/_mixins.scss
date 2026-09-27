@@ -1,0 +1,32 @@
+@use "variables" as *;
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin align-center {
+    display: flex;
+    align-items: center;
+}
+
+@mixin justify-center {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin gap {
+    display: flex;
+    gap: 0.8rem;
+}

@@ -1,0 +1,108 @@
+@use "base" as *;
+@use "mixins" as *;
+@use "variables" as *;
+
+body {
+  background-color: #152040;
+}
+
+.headeing {
+  text-align: center;
+  color: $white;
+  font-family: "Anton", sans-serif;
+}
+
+.cards-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card {
+  margin-top: 50px;
+  width: 58rem;
+  @include flex-row;
+  border: 1px solid $white;
+  background-color: $white;
+  img {
+    width: 29rem;
+    height: 26rem;
+  }
+  .content {
+    padding: 60px;
+    h2,
+    p,
+    hr {
+      margin-top: 20px;
+    }
+    .booknow {
+      text-decoration: none;
+      display: inline-block;
+      border: 1ppx solid #152040;
+      background-color: #152040;
+      padding: 10px 20px;
+      color: $white;
+      margin-top: 20px;
+      font-family: "Montserrat", sans-serif;
+    }
+    .booknow:hover {
+      background-color: $primary-color;
+    }
+  }
+}
+
+@media (max-width: 946px) {
+  .card {
+    max-width: 42rem;
+    img {
+      max-width: 340px;
+      max-height: 340px;
+    }
+    .content {
+      padding: 30px;
+    }
+  }
+  .countryphone {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 816px) {
+  .logo {
+    max-width: 3rem;
+    max-height: 2rem;
+  }
+  .heading {
+    font-size: 1.5rem;
+  }
+  .burgerBtn {
+    display: flex;
+    margin-right: 1rem;
+  }
+  .navBar {
+    display: none;
+  }
+  .card {
+    @include flex-column;
+    max-width: 340px;
+  }
+  .footernav ul {
+    @include flex-center;
+    @include flex-column;
+  }
+}
+
+@media (max-width: 426px) {
+  .phonenumber,
+  .download {
+    margin: 0 auto;
+  }
+  .card {
+    @include flex-column;
+    max-width: 300px;
+    img {
+      max-width: 300px;
+    }
+  }
+}

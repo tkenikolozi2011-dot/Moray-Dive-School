@@ -1,0 +1,379 @@
+@use "variables" as *;
+@use "mixins" as *;
+@use "base" as *;
+
+body {
+  background-color: #152040;
+}
+
+.photos,
+.photos-two,
+.photos-three {
+  margin-top: 3rem;
+}
+
+h1,
+p {
+  margin-top: 30px;
+  text-align: center;
+  color: $white;
+  font-family: "Anton", sans-serif;
+}
+
+h2 {
+  margin-top: 30px;
+  text-align: center;
+  color: $yellow;
+  font-family: "Anton", sans-serif;
+}
+
+.photos {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  grid-template-areas:
+    "first second third"
+    "fourth fifth sixth"
+    "fourth seventh eighth";
+}
+
+.first {
+  width: 427px;
+  height: 412px;
+  grid-area: first;
+}
+
+.second {
+  width: 427px;
+  height: 285px;
+  grid-area: second;
+}
+
+.third {
+  width: 426px;
+  height: 284px;
+  grid-area: third;
+}
+
+.fourth {
+  width: 427px;
+  height: 569px;
+  margin-top: 2rem;
+  grid-area: fourth;
+}
+
+.fifth {
+  width: 26rem;
+  height: 285px;
+  grid-area: fifth;
+}
+
+.sixth {
+  width: 426px;
+  height: 284px;
+  grid-area: sixth;
+}
+
+.seventh {
+  width: 427px;
+  height: 285px;
+  grid-area: seventh;
+}
+
+.eighth {
+  width: 426px;
+  height: 284px;
+  grid-area: eighth;
+}
+
+.photos-two {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  justify-items: center;
+  grid-template-areas:
+    "ninth tenth eleventh"
+    "twelfth tenth thirteenth"
+    "twelfth fourteenth fifteenth"
+    ". sixteenth .";
+}
+
+.ninth {
+  width: 373px;
+  height: 186px;
+  grid-area: ninth;
+}
+
+.tenth {
+  width: 374px;
+  height: 561px;
+  grid-area: tenth;
+}
+
+.eleventh {
+  width: 374px;
+  height: 280px;
+  grid-area: eleventh;
+}
+
+.twelfth {
+  width: 373px;
+  height: 497px;
+  grid-area: twelfth;
+}
+
+.thirteenth {
+  width: 373px;
+  height: 249px;
+  grid-area: thirteenth;
+}
+
+.fourteenth {
+  margin-top: 20px;
+  width: 373px;
+  height: 249px;
+  grid-area: fourteenth;
+}
+
+.fifteenth {
+  width: 374px;
+  height: 250px;
+  grid-area: fifteenth;
+}
+
+.sixteenth {
+  margin-top: 20px;
+  width: 373px;
+  height: 249px;
+  grid-area: sixteenth;
+}
+
+.whale-view {
+  margin-top: 50px;
+}
+
+.photos-three {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  grid-template-areas:
+    "seventeenth eighteenth nineteenth"
+    "twentieth twenty-first twenty-second"
+    ". twenty-third twenty-fourth";
+}
+
+.seventeenth {
+  width: 373px;
+  height: 249px;
+  grid-area: seventeenth;
+}
+
+.eighteenth {
+  width: 374px;
+  height: 249px;
+  grid-area: eighteenth;
+}
+
+.nineteenth {
+  width: 373px;
+  height: 210px;
+  grid-area: nineteenth;
+}
+
+.twentieth {
+  width: 373px;
+  height: 280px;
+  grid-area: twentieth;
+}
+
+.twenty-first {
+  width: 374px;
+  height: 250px;
+  grid-area: twenty-first;
+}
+
+.twenty-second {
+  width: 373px;
+  height: 210px;
+  grid-area: twenty-second;
+}
+
+.twenty-third {
+  width: 374px;
+  height: 249px;
+  grid-area: twenty-third;
+}
+
+.twenty-fourth {
+  width: 373px;
+  height: 237px;
+  grid-area: twenty-fourth;
+}
+
+@media (max-width: 1261px) {
+  .burgerBtn {
+    display: flex;
+    margin-right: 1rem;
+  }
+  .navBar {
+    display: none;
+  }
+  .whale-view,
+  .divers-key {
+    margin-top: 3rem;
+  }
+  .photos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: center;
+    grid-template-areas:
+      "first second"
+      "fourth third"
+      "fifth sixth"
+      "seventh eighth";
+    img {
+      max-width: 400px;
+      max-height: 350px;
+      margin-top: 20px;
+    }
+  }
+  .photos-two {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    justify-items: center;
+    grid-template-areas:
+      "ninth tenth "
+      "eleventh tenth  "
+      "twelfth thirteenth"
+      "twelfth fourteenth "
+      "fifteenth sixteenth";
+  }
+  .photos-three {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: center;
+    grid-template-areas:
+      "seventeenth eighteenth"
+      "nineteenth twentieth"
+      "twenty-first twenty-second "
+      "twenty-third twenty-fourth";
+  }
+}
+
+@media (max-width: 821px) {
+  .heading {
+    font-size: 1rem;
+  }
+  .divers-key {
+    margin-top: 3rem;
+  }
+  .whale-view {
+    margin-top: 3rem;
+  }
+  .photos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    justify-items: center;
+    grid-template-areas:
+      "first"
+      "second"
+      "third"
+      "fourth"
+      "fifth"
+      "sixth"
+      "seventh"
+      "eighth";
+
+    img {
+      margin-top: 10px;
+      max-width: 350px;
+      max-height: 325px;
+    }
+  }
+  .photos-two {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    justify-items: center;
+    grid-template-areas:
+      "ninth"
+      "tenth"
+      "eleventh"
+      "twelfth"
+      "thirteenth "
+      "fourteenth"
+      "fifteenth"
+      "sixteenth";
+    img {
+      margin-top: 10px;
+      max-width: 350px;
+      max-height: 350px;
+    }
+  }
+  .photos-three {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    justify-items: center;
+    grid-template-areas:
+      "seventeenth"
+      "eighteenth"
+      "nineteenth"
+      "twentieth"
+      "twenty-first"
+      "twenty-second"
+      "twenty-third"
+      "twenty-fourth";
+    img {
+      margin-top: 10px;
+      max-width: 350px;
+      max-height: 350px;
+    }
+  }
+  .footer {
+    margin-top: 427px;
+  }
+
+  .countryphone {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .footernav ul{
+    @include flex-center;
+    @include flex-column;
+  }
+}
+
+@media (max-width: 321px) {
+  .logo {
+    width: 4rem;
+  }
+  .photos {
+    img {
+      max-width: 300px;
+      max-height: 325px;
+    }
+  }
+  .photos-two {
+    img {
+      max-width: 300px;
+      max-height: 350px;
+    }
+  }
+  .photos-three {
+    img {
+      max-width: 300px;
+      max-height: 350px;
+    }
+  }
+}

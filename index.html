@@ -1,0 +1,442 @@
+<!-- https://ru.wix.com/website-template/view/html/2271 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Hepta+Slab:wght@1..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./Root/style.css" />
+    <link rel="icon" type="image/svg" href="./Root/logo.svg" />
+    <title>Moray Dive School</title>
+  </head>
+  <body>
+    <header>
+      <div class="logodiv">
+        <img src="./Root/logo.svg" alt="logo" class="logo" />
+        <a href="./index.html" class="heading">Moray Dive School</a>
+      </div>
+
+      <input type="checkbox" id="burgerBtnId" />
+
+      <label for="burgerBtnId" class="burgerBtn">
+        <span class="burgerLine1"></span>
+        <span class="burgerLine2"></span>
+        <span class="burgerLine3"></span>
+      </label>
+
+      <nav class="navBar">
+        <ul>
+          <li>
+            <a href="./index.html" class="pagelinks">Home</a>
+          </li>
+          <li>
+            <a href="./About/about.html" class="pagelinks">About</a>
+          </li>
+          <li>
+            <a href="./Dive Sites/divesites.html" class="pagelinks"
+              >Dive Sites</a
+            >
+          </li>
+          <li>
+            <a href="./Services/services.html" class="pagelinks">Services</a>
+          </li>
+          <li>
+            <a href="./FAQ/faq.html" class="pagelinks">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="mobileNav">
+        <ul>
+          <li>
+            <a href="./index.html" class="pagelinks">Home</a>
+          </li>
+          <li>
+            <a href="./About/about.html" class="pagelinks">About</a>
+          </li>
+          <li>
+            <a href="./Dive Sites/divesites.html" class="pagelinks"
+              >Dive Sites</a
+            >
+          </li>
+          <li>
+            <a href="./Services/services.html" class="pagelinks">Services</a>
+          </li>
+          <li>
+            <a href="./FAQ/faq.scss" class="pagelinks">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Moray Dive School</h1>
+        <p class="paragraph">Plunge into the Adventure of a Lifetime</p>
+        <div class="divbooknow">
+          <a href="./Services/services.html" class="booknow">Book now</a>
+        </div>
+      </section>
+      <section class="hero2">
+        <div data-aos="fade-up">
+          <h2 class="headingabout">About Us</h2>
+        </div>
+
+        <div data-aos="fade-up">
+          <p class="aboutparagraph">
+            I'm a paragraph. Click here to add your own text and edit me. It's
+            easy. Just click “Edit Text” or double click me to add your own
+            content and make changes to the font. Feel free to drag and drop me
+            anywhere you like on your page. I'm a great place for you to tell a
+            story and let your users know a little more about you.
+          </p>
+        </div>
+        <div data-aos="fade-up">
+          <div class="divreadmore">
+            <a href="./About/about.html" class="readmore">Read More</a>
+          </div>
+        </div>
+      </section>
+      <section class="cards">
+        <h2 class="courcesheading">Our Courses</h2>
+        <div class="card-wrapper">
+          <div class="card1">
+            <div class="content">
+              <h3>Intro to Scuba</h3>
+              <p>
+                I'm a paragraph. Click here to add your own text and edit me.
+                Let your users get to know you.
+              </p>
+              <a href="./Services/services.html" class="booknow2">Book Now</a>
+            </div>
+          </div>
+          <div class="card2">
+            <div class="content">
+              <h3>Open Water Diver</h3>
+              <p>
+                I'm a paragraph. Click here to add your own text and edit me.
+                Let your users get to know you.
+              </p>
+              <a href="./Services/services.html" class="booknow2">Book Now</a>
+            </div>
+          </div>
+          <div class="card3">
+            <div class="content">
+              <h3>Dive Master</h3>
+              <p>
+                I'm a paragraph. Click here to add your own text and edit me.
+                Let your users get to know you.
+              </p>
+              <a href="./Services/services.html" class="booknow2">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="seccarousel">
+        <div
+          id="myCarousel"
+          class="carousel slide mb-6"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+              class="active"
+              aria-current="true"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+              class=""
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item">
+              <svg
+                aria-hidden="true"
+                class="bd-placeholder-img"
+                height="100%"
+                preserveAspectRatio="xMidYMid slice"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  width="100%"
+                  height="100%"
+                  fill="var(--bs-secondary-color)"
+                ></rect>
+              </svg>
+              <div class="container">
+                <div class="carousel-caption text-center">
+                  <p class="opacity-75">
+                    “I'm a testimonial. Click to edit me and add text that says
+                    something nice about you and your services. Let your
+                    customers review you and tell their friends how great you
+                    are.”
+                  </p>
+                  <p class="names">Nick Brewer</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item active">
+              <svg
+                aria-hidden="true"
+                class="bd-placeholder-img"
+                height="100%"
+                preserveAspectRatio="xMidYMid slice"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  width="100%"
+                  height="100%"
+                  fill="var(--bs-secondary-color)"
+                ></rect>
+              </svg>
+              <div class="container">
+                <div class="carousel-caption">
+                  <p>
+                    “I'm a testimonial. Click to edit me and add text that says
+                    something nice about you and your services. Let your
+                    customers review you and tell their friends how great you
+                    are.”
+                  </p>
+                  <p class="names">Stephanie Stewart</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <svg
+                aria-hidden="true"
+                class="bd-placeholder-img"
+                height="100%"
+                preserveAspectRatio="xMidYMid slice"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  width="100%"
+                  height="100%"
+                  fill="var(--bs-secondary-color)"
+                ></rect>
+              </svg>
+              <div class="container">
+                <div class="carousel-caption">
+                  <p>
+                    “I'm a testimonial. Click to edit me and add text that says
+                    something nice about you and your services. Let your
+                    customers review you and tell their friends how great you
+                    are.”
+                  </p>
+                  <p class="names">Corey Vega</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <section class="hero3">
+        <div class="bgturtle">
+          <div data-aos="fade-up">
+            <h2 class="donatehead">Step Up, Help Us Clean The Oceans</h2>
+          </div>
+          <div data-aos="fade-up">
+            <a href="#" class="donate">Donate now</a>
+          </div>
+        </div>
+      </section>
+      <section class="hero4">
+        <h2 class="headtwo">Certified By</h2>
+        <div class="photos">
+          <img
+            src="https://static.wixstatic.com/media/fc7570_f6c7cf2034be45e5bb5d882026a1c621~mv2.png/v1/fill/w_260,h_105,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc7570_f6c7cf2034be45e5bb5d882026a1c621~mv2.png"
+            alt="wda photo"
+            class="wdalogo"
+          />
+          <img
+            src="https://static.wixstatic.com/media/fc7570_afb9be5485a147a483e41b9dc1834a56~mv2.png/v1/fill/w_260,h_110,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc7570_afb9be5485a147a483e41b9dc1834a56~mv2.png"
+            alt="isdu photo"
+            class="isdulogo"
+          />
+        </div>
+      </section>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3392.5890137086058!2d-122.46873742386174!3d37.75795737198964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085871de9ad9347%3A0x9e4e9f544ee4948f!2sBay%20Area%20School%20Of%20Diving!5e1!3m2!1sen!2sus!4v1784129526689!5m2!1sen!2sus"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"
+      ></iframe>
+      <section class="contact">
+        <div class="divcontact">
+          <div class="leftside">
+            <h2>Contact Us</h2>
+            <p>500 Terry Francine Street San Francisco, CA 94158</p>
+            <p>123-456-7890</p>
+            <p>123-456-7890</p>
+          </div>
+          <div class="rightside">
+            <form>
+              <div class="nametype">
+                <div class="firstname">
+                  <label for="firstname" class="firstname">First Name*</label>
+                  <input type="text" placeholder="" id="firstname" required />
+                </div>
+                <div class="lastname">
+                  <label for="lastname">last Name*</label>
+                  <input type="text" placeholder="" id="lastname" required />
+                </div>
+              </div>
+              <div class="emailphone">
+                <div class="email">
+                  <label for="email">Email*</label>
+                  <input type="email" placeholder="" id="email" required />
+                </div>
+                <div class="phone">
+                  <label for="phone">Phone*</label>
+                  <input
+                    type="number"
+                    placeholder=""
+                    id="phone"
+                    required
+                    minlength="6"
+                    maxlength="8"
+                  />
+                </div>
+              </div>
+              <div class="message">
+                <label for="message">Message*</label>
+                <textarea name="Message" id="message"></textarea>
+                <button class="sumbitbtn">Sumbit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="mobileapp">
+        <div class="download">
+          <h2 class="footerheading">Download Our Mobile App</h2>
+          <p>
+            Download the Spaces by Wix app and join Moray Dive School to easily
+            stay updated on the go.
+          </p>
+        </div>
+        <div class="countryphone">
+          <div class="selection">
+            <label for="country">Country</label>
+            <select name="country" id="country">
+              <option value="">+995</option>
+              <option value="">+44</option>
+              <option value="">+7</option>
+            </select>
+            <a href="#" class="send">Send</a>
+          </div>
+          <div class="phonenumber">
+            <label for="phonenumb">Phone Number</label>
+            <input
+              type="number"
+              id="phonenumb"
+              placeholder="Enter phone number"
+            />
+          </div>
+        </div>
+        <div class="imglinks">
+          <a href="#"
+            ><img
+              src="https://static.wixstatic.com/media/2feeec_9502e1d7d07e4bdf97f5fe0fa4d9309f~mv2.png/v1/fill/w_115,h_115,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/qrCode.png"
+              alt="QR code"
+          /></a>
+          <div class="downloadapps">
+            <a href="#"
+              ><img
+                src="https://static.wixstatic.com/media/3e41b8_c7dfb607579c44039e9f8c2610f15d3d~mv2.png/v1/fill/w_180,h_54,al_c,lg_1,q_85,enc_auto/Google.png"
+                alt="play store"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://static.wixstatic.com/media/3e41b8_a0bf062897f64090b91f438ce6bf69ba~mv2.png/v1/fill/w_180,h_54,al_c,lg_1,q_85,enc_auto/apple.png"
+                alt="app store"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <nav class="footernav">
+        <ul>
+          <li>
+            <a href="./index.html" class="pagelinks">Home</a>
+          </li>
+          <li>
+            <a href="./About/about.html" class="pagelinks">About</a>
+          </li>
+          <li>
+            <a href="./Dive Sites/divesites.html" class="pagelinks"
+              >Dive Sites</a
+            >
+          </li>
+          <li>
+            <a href="./Services/services.html" class="pagelinks">Services</a>
+          </li>
+          <li>
+            <a href="./FAQ/faq.html" class="pagelinks">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

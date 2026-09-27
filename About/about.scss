@@ -1,0 +1,111 @@
+@use "base" as *;
+@use "variables" as *;
+@use "mixins" as *;
+
+body {
+  background-color: #152040;
+}
+
+h1,
+h2 {
+  text-align: center;
+  font-family: "Anton", sans-serif;
+}
+
+h1 {
+  color: $white;
+}
+
+h2 {
+  color: $yellow;
+  margin-top: 50px;
+}
+
+.content,
+.content2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+p {
+  color: $white;
+  width: 700px;
+  margin: 30px;
+  text-align: center;
+  font-family: "Hepta Slab", serif;
+}
+
+.cards {
+  @include flex-row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card1,
+.card2,
+.card3 {
+  @include align-center;
+  flex-direction: column;
+}
+
+h3 {
+  margin-top: 40px;
+  color: $white;
+}
+
+.p-cards {
+  width: 300px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.cards img {
+  border-radius: 150px;
+}
+
+@media (max-width: 769px) {
+  .burgerBtn {
+    display: flex;
+    margin-right: 1rem;
+  }
+  .navBar {
+    display: none;
+  }
+  .logo {
+    width: 4.5rem;
+    height: 2.5rem;
+  }
+  p {
+    max-width: 80%;
+  }
+  .countryphone {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .heading {
+    font-size: 1rem;
+  }
+  .footernav ul {
+    @include flex-center;
+    @include flex-column;
+  }
+  .download,
+  .phonenumb {
+    width: 100%;
+    margin-bottom: 30px;
+    p {
+      width: 100%;
+      max-width: 80%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 321px) {
+  .p-cards {
+    width: 80%;
+  }
+}
