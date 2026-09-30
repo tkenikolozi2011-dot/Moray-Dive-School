@@ -500,7 +500,7 @@ h2 {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(8, 1fr);
     justify-items: center;
-    grid-template-areas: "ninth" "tenth" "eleventh" "twelfth" "thirteenth " "fourteenth" "fifteenth" "sixteenth";
+    grid-template-areas: "ninth" "tenth" "eleventh" "twelfth" "thirteenth" "fourteenth" "fifteenth" "sixteenth";
   }
   .photos-two img {
     margin-top: 10px;
