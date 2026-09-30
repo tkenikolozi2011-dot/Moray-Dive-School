@@ -231,7 +231,6 @@ footer {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid red !important;
 }
 
 .hero {
@@ -599,7 +598,7 @@ iframe {
     height: 2.5rem;
   }
   .cards {
-    height: 1600px;
+    width: 1600px;
   }
   .cards .card1,
   .cards .card2,
@@ -653,7 +652,7 @@ iframe {
   .card2,
   .card3 {
     height: 450px;
-    width: 300px;
+    width: 80%;
   }
   .carousel-item {
     max-height: 400px;
@@ -685,21 +684,15 @@ iframe {
     margin-bottom: 30px;
   }
 }
-@media (max-width: 1271px) and (max-width: 376px) {
+@media (max-width: 1271px) and (max-width: 421px) {
   .heading {
     font-size: 1.5rem;
   }
   .aboutparagraph {
     width: 310px;
-    margin: 0 auto;
   }
   .readmore {
     margin-top: 25px;
-  }
-  .card1,
-  .card2,
-  .card3 {
-    max-width: 40vh;
   }
   .carousel-item {
     height: 40vh;
