@@ -598,7 +598,7 @@ iframe {
     height: 2.5rem;
   }
   .cards {
-    width: 1600px;
+    height: 1600px;
   }
   .cards .card1,
   .cards .card2,
@@ -652,7 +652,7 @@ iframe {
   .card2,
   .card3 {
     height: 450px;
-    width: 80%;
+    width: 300px;
   }
   .carousel-item {
     max-height: 400px;
