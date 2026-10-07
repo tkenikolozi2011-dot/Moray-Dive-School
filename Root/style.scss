@@ -105,7 +105,7 @@ a {
   grid-area: paragraph2;
   width: 500px;
   color: $white;
-  font-size: $font-weight;
+  font-size: 1rem;
   justify-self: center;
   align-self: center;
   text-align: center;
@@ -356,7 +356,7 @@ iframe {
 }
 
 .sumbitbtn:hover {
-  background-color: $white;
+  background-color: $primary-color;
 }
 
 @media (max-width: 1271px) {

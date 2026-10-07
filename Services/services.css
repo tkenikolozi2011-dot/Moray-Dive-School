@@ -270,7 +270,7 @@ body {
 .card .content .booknow {
   text-decoration: none;
   display: inline-block;
-  border: 1ppx solid #152040;
+  border: 1px solid #152040;
   background-color: #152040;
   padding: 10px 20px;
   color: #ffffff;
@@ -297,7 +297,7 @@ body {
     margin-bottom: 30px;
   }
 }
-@media (max-width: 816px) {
+@media (max-width: 862px) {
   .logo {
     max-width: 3rem;
     max-height: 2rem;

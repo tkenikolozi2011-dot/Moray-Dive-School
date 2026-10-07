@@ -216,13 +216,6 @@ h2 {
 }
 
 @media (max-width: 1261px) {
-  .burgerBtn {
-    display: flex;
-    margin-right: 1rem;
-  }
-  .navBar {
-    display: none;
-  }
   .whale-view,
   .divers-key {
     margin-top: 3rem;
@@ -268,7 +261,14 @@ h2 {
   }
 }
 
-@media (max-width: 821px) {
+@media (max-width: 862px) {
+  .burgerBtn {
+    display: flex;
+    margin-right: 1rem;
+  }
+  .navBar {
+    display: none;
+  }
   .heading {
     font-size: 1rem;
   }
@@ -346,8 +346,8 @@ h2 {
     margin-top: 30px;
     margin-bottom: 30px;
   }
-  
-  .footernav ul{
+
+  .footernav ul {
     @include flex-center;
     @include flex-column;
   }

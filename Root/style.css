@@ -324,7 +324,7 @@ a {
   grid-area: paragraph2;
   width: 500px;
   color: #ffffff;
-  font-size: 600;
+  font-size: 1rem;
   justify-self: center;
   align-self: center;
   text-align: center;
@@ -588,8 +588,8 @@ iframe {
   border: none;
 }
 
-.sumbitbtn::hover {
-  background-color: #ffffff;
+.sumbitbtn:hover {
+  background-color: #0086BC;
 }
 
 @media (max-width: 1271px) {

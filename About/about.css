@@ -295,7 +295,7 @@ h3 {
   border-radius: 150px;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 862px) {
   .burgerBtn {
     display: flex;
     margin-right: 1rem;
